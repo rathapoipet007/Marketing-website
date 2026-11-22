@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Astroship</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation (Same as homepage) -->
+    <nav class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+        <div class="flex items-center gap-12">
+            <a href="./index.html" class="text-xl font-bold tracking-tight">Astroship</a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+                <div class="flex items-center gap-1 cursor-pointer hover:text-black">
+                    Features
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <!-- Highlighting Pricing as it's the active page -->
+                <a href="./pricing.html" class="text-black font-semibold">Pricing</a>
+                <a href="./about.html" class="hover:text-black">About</a>
+                <a href="./blog.html" class="hover:text-black">Blog</a>
+                <a href="./contact.html" class="hover:text-black">Contact</a>
+            </div>
+        </div>
+
+        <div class="hidden md:flex items-center gap-4">
+            <a href="#" class="text-sm font-medium text-gray-600 hover:text-black">Log in</a>
+            <a href="#" class="bg-black text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-800 transition">Sign up</a>
+        </div>
+    </nav>
+
+    <!-- Pricing Section -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h1 class="text-5xl lg:text-6xl font-extrabold tracking-tight mb-4">Pricing</h1>
+            <p class="text-lg text-gray-500">Simple & Predictable pricing. No Surprises.</p>
+        </div>
+
+        <!-- Pricing Cards Container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            
+            <!-- Personal Plan -->
+            <div class="border border-gray-200 rounded-xl p-8 flex flex-col">
+                <div class="text-center mb-8">
+                    <h3 class="text-gray-400 font-medium mb-4">Personal</h3>
+                    <div class="text-4xl font-extrabold mb-2">Free</div>
+                </div>
+                
+                <ul class="flex-grow space-y-4 mb-10 text-sm text-gray-700">
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Lifetime free
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Up to 3 users
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Unlimited Pages
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Astro Sub domain
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Basic Integrations
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Community Support
+                    </li>
+                </ul>
+                
+                <button class="w-full py-3 px-4 bg-white border border-gray-900 text-black font-medium rounded hover:bg-gray-50 transition">
+                    Get Started
+                </button>
+            </div>
+
+            <!-- Startup Plan -->
+            <div class="border border-gray-200 rounded-xl p-8 flex flex-col shadow-sm">
+                <div class="text-center mb-8">
+                    <h3 class="text-gray-400 font-medium mb-4">Startup</h3>
+                    <div class="text-4xl font-extrabold mb-2">$19</div>
+                </div>
+                
+                <ul class="flex-grow space-y-4 mb-10 text-sm text-gray-700">
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        All Free Features
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Up to 20 users
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        20 Custom domains
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Unlimited Collaborators
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Advanced Integrations
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Priority Support
+                    </li>
+                </ul>
+                
+                <button class="w-full py-3 px-4 bg-black text-white font-medium rounded hover:bg-gray-800 transition">
+                    Get Started
+                </button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="border border-gray-200 rounded-xl p-8 flex flex-col">
+                <div class="text-center mb-8">
+                    <h3 class="text-gray-400 font-medium mb-4">Enterprise</h3>
+                    <div class="text-4xl font-extrabold mb-2">Custom</div>
+                </div>
+                
+                <ul class="flex-grow space-y-4 mb-10 text-sm text-gray-700">
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        All Pro Features
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Unlimited Custom domains
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        99.99% Uptime SLA
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        SAML & SSO Integration
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Dedicated Account Manager
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg class="w-5 h-5 text-gray-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        24/7 Phone Support
+                    </li>
+                </ul>
+                
+                <button class="w-full py-3 px-4 bg-white border border-gray-900 text-black font-medium rounded hover:bg-gray-50 transition">
+                    Contact us
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer (Same as homepage) -->
+    <footer class="text-center py-12 text-sm text-gray-500 mt-auto">
+        <p class="mb-2">Copyright © 2026 Astroship. All rights reserved.</p>
+        <p>Made by <a href="#" class="text-gray-400 hover:text-black">Web3Templates</a> · Distributed by <a href="#" class="text-gray-400 hover:text-black">ThemeWagon</a></p>
+    </footer>
+<script src="./Script.js"></script>
+</body>
+</html>

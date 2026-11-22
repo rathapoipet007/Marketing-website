@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Astroship</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation (Same as previous pages) -->
+    <nav class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+        <div class="flex items-center gap-12">
+            <a href="./index.html" class="text-xl font-bold tracking-tight">Astroship</a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+                <div class="flex items-center gap-1 cursor-pointer hover:text-black">
+                    Features
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <a href="./pricing.html" class="hover:text-black">Pricing</a>
+                <a href="./about.html" class="hover:text-black">About</a>
+                <!-- Highlighting Blog as it's the active page -->
+                <a href="./blog.html" class="text-black font-semibold">Blog</a>
+                <a href="./contact.html" class="hover:text-black">Contact</a>
+            </div>
+        </div>
+
+        <div class="hidden md:flex items-center gap-4">
+            <a href="#" class="text-sm font-medium text-gray-600 hover:text-black">Log in</a>
+            <a href="#" class="bg-black text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-800 transition">Sign up</a>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        
+        <!-- Header -->
+        <div class="text-center mb-20">
+            <h1 class="text-5xl lg:text-6xl font-extrabold tracking-tight mb-4">Our Blog</h1>
+            <p class="text-lg text-gray-500">We write about building startups and thoughts going on our mind.</p>
+        </div>
+
+        <!-- Blog Post List -->
+        <div class="space-y-16">
+            
+            <!-- Post 1 -->
+            <article class="flex flex-col md:flex-row gap-8 items-center group cursor-pointer">
+                <div class="w-full md:w-1/2 shrink-0 overflow-hidden rounded-lg bg-gray-100 aspect-[4/3] md:aspect-[16/10]">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Data Structures" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <p class="text-blue-500 text-sm font-medium tracking-wide uppercase mb-3">Courses</p>
+                    <h2 class="text-3xl font-bold leading-tight mb-4 group-hover:text-gray-700 transition">Introduction to the Essential Data Structures & Algorithms</h2>
+                    <p class="text-gray-500 text-sm">
+                        <span class="font-medium text-gray-700">Marcell Ziemann</span> · <span>Wed Nov 09 2022</span>
+                    </p>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="flex flex-col md:flex-row gap-8 items-center group cursor-pointer">
+                <div class="w-full md:w-1/2 shrink-0 overflow-hidden rounded-lg bg-gray-100 aspect-[4/3] md:aspect-[16/10]">
+                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Web Development" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <p class="text-blue-500 text-sm font-medium tracking-wide uppercase mb-3">Tutorials</p>
+                    <h2 class="text-3xl font-bold leading-tight mb-4 group-hover:text-gray-700 transition">The Complete Guide to Full Stack Web Development</h2>
+                    <p class="text-gray-500 text-sm">
+                        <span class="font-medium text-gray-700">Janette Lynch</span> · <span>Tue Nov 08 2022</span>
+                    </p>
+                </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="flex flex-col md:flex-row gap-8 items-center group cursor-pointer">
+                <div class="w-full md:w-1/2 shrink-0 overflow-hidden rounded-lg bg-gray-100 aspect-[4/3] md:aspect-[16/10]">
+                    <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Frontend Master" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <p class="text-blue-500 text-sm font-medium tracking-wide uppercase mb-3">Tutorials</p>
+                    <h2 class="text-3xl font-bold leading-tight mb-4 group-hover:text-gray-700 transition">How to become a Frontend Master</h2>
+                    <p class="text-gray-500 text-sm">
+                        <span class="font-medium text-gray-700">Connor Lopez</span> · <span>Mon Nov 07 2022</span>
+                    </p>
+                </div>
+            </article>
+
+            <!-- Post 4 -->
+            <article class="flex flex-col md:flex-row gap-8 items-center group cursor-pointer">
+                <div class="w-full md:w-1/2 shrink-0 overflow-hidden rounded-lg bg-gray-100 aspect-[4/3] md:aspect-[16/10]">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Typography" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <p class="text-blue-500 text-sm font-medium tracking-wide uppercase mb-3">Technology</p>
+                    <h2 class="text-3xl font-bold leading-tight mb-4 group-hover:text-gray-700 transition">Typography Example Post</h2>
+                    <p class="text-gray-500 text-sm">
+                        <span class="font-medium text-gray-700">Charles North</span> · <span>Sat Nov 05 2022</span>
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Footer (Same as previous pages) -->
+    <footer class="text-center py-12 text-sm text-gray-500 mt-auto">
+        <p class="mb-2">Copyright © 2026 Astroship. All rights reserved.</p>
+        <p>Made by <a href="#" class="text-gray-400 hover:text-black">Web3Templates</a> · Distributed by <a href="#" class="text-gray-400 hover:text-black">ThemeWagon</a></p>
+    </footer>
+<script src="./Script.js"></script>
+</body>
+</html>
